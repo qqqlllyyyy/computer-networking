@@ -2,16 +2,16 @@
 
 1. Networked Applications
 2. The 4-Layer Internet Model
-  * 2.1. Link Layer
-  * 2.2. Network Layer
-  * 2.3. Transport Layer
-  * 2.4. Application Layer
+    * 2.1. Link Layer
+    * 2.2. Network Layer
+    * 2.3. Transport Layer
+    * 2.4. Application Layer
 3. The IP Service Model
-  * 3.1. How IP Works
-  * 3.2. The IP Service Model
+    * 3.1. How IP Works
+    * 3.2. The IP Service Model
 4. Life of a Packet
-  * 4.1. In Transport Layer - TCP Byte Stream
-  * 4.2. Forwarding Table
+    * 4.1. In Transport Layer - TCP Byte Stream
+    * 4.2. Forwarding Table
 
 ## 1. Network Applications
 
