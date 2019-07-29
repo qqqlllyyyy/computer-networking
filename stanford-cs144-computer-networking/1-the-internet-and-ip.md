@@ -1,5 +1,19 @@
+# Unit 1: The Internet and IP
 
-## 1. Networked Applications
+1. Networked Applications
+2. The 4-Layer Internet Model
+  * 2.1. Link Layer
+  * 2.2. Network Layer
+  * 2.3. Transport Layer
+  * 2.4. Application Layer
+3. The IP Service Model
+  * 3.1. How IP Works
+  * 3.2. The IP Service Model
+4. Life of a Packet
+  * 4.1. In Transport Layer - TCP Byte Stream
+  * 4.2. Forwarding Table
+
+## 1. Network Applications
 
 Network applications can exchange data across the world.
 
@@ -49,7 +63,7 @@ What does Skype do if both clients are behind NATs? We can’t reverse the conne
 
 ![07](images/1-07.png)
 
-## 2. The 4 Layer Internet Model
+## 2. The 4-Layer Internet Model
 
 The "4 Layer Internet Model" was created to describe the hierarchy of operations that make up the Internet, so that applications can reuse the same building blocks over and over again, without having to create them from scratch for every application.
 
