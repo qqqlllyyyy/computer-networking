@@ -165,3 +165,42 @@ a few other carefully chosen services. Here are 5 features:
 ![27](images/1-27.png)
 
 ![28](images/1-28.png)
+
+## 4. Life of a Packet
+
+The 4-layer model of the Internet takes a stream of data from the application layer. The transport layer breaks this stream into segments of data that it reliably delivers to an application running on another computer. The transport layer sends these segments as network layer packets, which the network layer delivers to the other computer.
+
+### 4.1. In Transport Layer - TCP Byte Stream
+
+Almost all web traffic is over TCP (Transport Control Protocol). In its typical operation, there’s a client and a server. A server listens for connection requests. To open a connection, a client issues a connection request, which the server responds to. This exchange takes three messages, something called the “three way handshake.”
+
+![29](images/1-29.png)
+
+* The first step of handshake is when the client sends a `synchronize` message to the server, often called a `SYN`.
+* The second step is when the server responds with a `synchronize` message that also acknowledges the clients `synchronize`, or a `synchronize and acknowledge message`, often called a `SYN-ACK`.
+* The third and final step is when the client responds by acknowledging the server’s synchronize, often called an `ACK`.
+
+The network layer is responsible for delivering packets to computers, but the transport layer is responsible for delivering data to applications.
+
+![30](images/1-30.png)
+
+An Internet Protocol address, is the address the network layer uses to deliver packets to the computer. The second, the TCP port, tells the computer’s software which application to deliver data to. Web servers usually run on TCP port 80.
+
+![31](images/1-31.png)
+
+### 4.2. Forwarding Table
+
+A forwarding table consists of a set of IP address patterns and the link to send across for each pattern. When a packet arrives, the router checks which forwarding table entry’s pattern best matches
+the packet. It forwards the packet along that entry’s link.
+
+![32](images/1-32.png)
+
+### Quiz
+
+![33](images/1-33.png)
+
+![34](images/1-34.png)
+
+![35](images/1-35.png)
+
+![35](images/1-36.png)
