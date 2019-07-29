@@ -130,6 +130,8 @@ IP sends the datagram to the Link Layer that puts it inside a Link frame, such a
 
 ### 3.2. The IP Service Model
 
+![21](images/1-21.png)
+
 Datagrams are routed hop-by-hop through the network from one router to the next, all the way from the IP source address to the IP destination address. The router doesn’t know the whole path – it simply uses the destination address to index into its forwarding table so that it can forward the packet to the next hop along the path towards its final destination.
 
 IP is unreliable. IP makes no promise that packets will be delivered to the destination.
@@ -137,4 +139,29 @@ IP is unreliable. IP makes no promise that packets will be delivered to the dest
 In fact, the IP datagram service is very much like the basic postal service. IP is an extremely simple, minimal service. It maintains no state at all related to a communication. We say that a communication service is `connectionless` because it doesn’t start by establishing some end to state associated with the communication. The IP layer simply routes each datagram individually and independently
 of all the others.
 
-![21](images/1-21.png)
+![22](images/1-22.png)
+
+In addition to the basic unreliable, best-effort, connectionless datagram service, IP also provides
+a few other carefully chosen services. Here are 5 features:
+
+![23](images/1-23.png)
+
+![24](images/1-24.png)
+
+### Summary & Quiz
+
+* IP is important. We use it every time we send and receive packets in the Internet.
+* It is a simple, dumb, minimal service with four main features:
+  * Datagram: It sends datagrams, hop-by-hop across the Internet
+  * Unreliable
+  * Best-effort
+  * Connectionless: there is no per-flow state making the protocol connectionless
+
+
+![25](images/1-25.png)
+
+![26](images/1-26.png)
+
+![27](images/1-27.png)
+
+![28](images/1-28.png)
